@@ -12,9 +12,6 @@ package desafio;
  */
 public class Desafio {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int[] a = {20, 19, 17, 18, 13, 5, 4, 2, 31, 7};
         int[] b = {71, 70, 59, 55, 54, 36, 28, 25, 17, 9};
@@ -40,9 +37,6 @@ package desafio;
  */
 public class Desafio {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         int[] a = {20, 19, 17, 18, 13, 5, 4, 2, 31, 7};
         int[] b = {71, 70, 59, 55, 54, 36, 28, 25, 17, 9};
