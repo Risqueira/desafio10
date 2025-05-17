@@ -49,3 +49,39 @@ public class Desafio {
 
 }
 ```
+# questao 3
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 3. Crie um programa que leia um vetor de 10 elementos de números inteiros e
+ * exiba na tela o valor máximo e o valor mínimo contido no vetor.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] elementos = new int[10];
+        Scanner ler = new Scanner(System.in);
+        int max = elementos[0];
+        int min = elementos[0];
+
+        for (int i = 0; i < elementos.length; i++) {
+            System.out.println("Digite um número:");
+            elementos[i] = ler.nextInt();
+
+            if (elementos[i] > max) {
+                max = elementos[i];
+            } else if (elementos[i] < min) {
+                min = elementos[i];
+            }
+        }
+        System.out.println("\nMaior valor:" + max);
+        System.out.println("Menor valor:" + min);
+
+    }
+}
+```
