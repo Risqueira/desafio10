@@ -183,3 +183,34 @@ public class Desafio10 {
     }
 }
 ```
+# questao 7
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 7. Crie um programa que leia um vetor de 10 elementos de números inteiros e
+ * verifique quantos elementos do vetor são de índice par.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] n = new int[10];
+        Scanner ler = new Scanner(System.in);
+        int soma = 0, c = 0;
+
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um numero:");
+            n[i] = ler.nextInt();
+            if (i % 2 == 0) {
+                c++;
+            }
+        }
+        System.out.println("\n Numeros do vetor que são de índice par é:" + c++);
+
+    }
+}
+```
