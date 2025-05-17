@@ -102,7 +102,6 @@ public class Desafio10 {
     public static void main(String[] args) {
         int[] n = new int[10];
         Scanner ler = new Scanner(System.in);
-        int par = 0;
 
         for (int i = 0; i < n.length; i++) {
             System.out.println("Digite um numero:");
