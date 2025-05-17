@@ -149,3 +149,37 @@ public class Desafio10 {
     }
 }
 ```
+# questao 6
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 6. Crie um programa que leia um vetor de 10 elementos de números inteiros e
+ * calcule a média dos valores presentes nas posições pares do vetor.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] n = new int[10];
+        Scanner ler = new Scanner(System.in);
+        int soma = 0, c = 0;
+
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um numero:");
+            n[i] = ler.nextInt();
+            if (i % 2 == 0) {
+                soma += n[i];
+                c++;
+            }
+        }
+
+        double media = (double) soma / c;
+        System.out.println("\nMedia dos numeros pares é:" + media);
+
+    }
+}
+```
