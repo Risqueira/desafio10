@@ -85,3 +85,36 @@ public class Desafio10 {
     }
 }
 ```
+# questao 4
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 4. Crie um programa que leia um vetor de 10 elementos de números inteiros e
+ * exiba na tela apenas os números pares contidos no vetor.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] n = new int[10];
+        Scanner ler = new Scanner(System.in);
+        int par = 0;
+
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um numero:");
+            n[i] = ler.nextInt();
+        }
+        System.out.println("\nOs numeros pares digitados:");
+        for (int i = 0; i < n.length; i++) {
+            if (n[i] % 2 == 0) {
+                System.out.println(n[i]);
+            }
+        }
+
+    }
+}
+```
