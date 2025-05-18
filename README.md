@@ -294,3 +294,45 @@ public class Desafio10 {
     }
 }
 ```
+# questao 10
+````java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 10. Criar dois vetores A e B com 10 elementos inteiros. Escreva um programa
+ * que leia o vetor A e em seguida envie para o vetor B em ordem inversa.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] a = new int[10];
+        int[] b = new int[10];
+        int[] nMultiplica = new int[10];
+        Scanner ler = new Scanner(System.in);
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("Digite um numero do vetor A[" + i + "]:");
+            a[i] = ler.nextInt();
+
+        }
+        for (int i = 0; i < a.length; i++) {
+            b[i] = a[a.length - 1 - i];
+        }
+        System.out.println("\nVetor A ordem original:");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("vetor [" + i + "]:" + a[i]);
+
+        }
+        System.out.println("\nVetor B ordem inversa:");
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("vetor [" + i + "]:" + b[i]);
+
+        }
+
+    }
+}
+```
