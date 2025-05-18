@@ -214,3 +214,43 @@ public class Desafio10 {
     }
 }
 ```
+# questao 8
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 8. Escreva um algoritmo que leia um vetor inteiro de 30 posições e crie um
+ * segundo vetor, substituindo os valores nulos por 10. Mostre os 2 vetores.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] n = new int[30];
+        int[] vNulos = new int[30];
+        Scanner ler = new Scanner(System.in);
+
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Digite um numero:");
+            n[i] = ler.nextInt();
+            if (n[i] == 0) {
+                vNulos[i] = 10;
+            } else {
+                vNulos[i] = n[i];
+            }
+        }
+        System.out.println("\nVetor original:");
+        for (int i = 0; i < n.length; i++) {
+            System.out.println("Vetor[" + i + "]=" + n[i]);
+        }
+        System.out.println("\nVetor com nulos substituidos por 10:");
+        for (int i = 0; i < vNulos.length; i++) {
+            System.out.println("Vetor[" + i + "]=" + vNulos[i]);
+        }
+
+    }
+}
+```
