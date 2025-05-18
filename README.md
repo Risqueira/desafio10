@@ -254,3 +254,43 @@ public class Desafio10 {
     }
 }
 ```
+# questao 9
+```java
+package desafio10;
+
+import java.util.Scanner;
+
+/**
+ * 9. Escreva um algoritmo que leia dois vetores de 10 posições e faça a
+ * multiplicação dos elementos de mesmo índice, colocando o resultado em um
+ * terceiro vetor. Mostre o vetor resultante.
+ *
+ * @author Henrique
+ */
+public class Desafio10 {
+
+    public static void main(String[] args) {
+        int[] a = new int[10];
+        int[] b = new int[10];
+        int[] nMultiplica = new int[10];
+        Scanner ler = new Scanner(System.in);
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("Digite um numero do vetor A[" + i + "]:");
+            a[i] = ler.nextInt();
+
+            System.out.println("Digite um numero do vetor B[" + i + "]:");
+            b[i] = ler.nextInt();
+
+            nMultiplica[i] = a[i] * b[i];
+        }
+        System.out.println("\nResultado da multiplicação de cada posição:");
+        for (int i = 0; i < a.length; i++) {
+            nMultiplica[i] = a[i] * b[i];
+            System.out.println("vetor [" + i + "]:" + nMultiplica[i]);
+
+        }
+
+    }
+}
+```
