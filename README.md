@@ -295,7 +295,7 @@ public class Desafio10 {
 }
 ```
 # questao 10
-````java
+```java
 package desafio10;
 
 import java.util.Scanner;
