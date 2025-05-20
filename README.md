@@ -286,7 +286,6 @@ public class Desafio10 {
         }
         System.out.println("\nResultado da multiplicação de cada posição:");
         for (int i = 0; i < a.length; i++) {
-            nMultiplica[i] = a[i] * b[i];
             System.out.println("vetor [" + i + "]:" + nMultiplica[i]);
 
         }
